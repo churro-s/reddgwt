@@ -1,0 +1,45 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.bodyMain {
+			
+		}
+		.thisShit {
+			background-color: #eee;
+			border-radius: 3px;
+			padding:3px;
+			cursor: pointer;
+		}
+		.thisShit:HOVER {
+			background-color: #DDDDDD;
+		}
+		.ups {
+			color: rgb(255, 139, 36);
+		}
+		.downs {
+			color: rgb(148, 148, 255);
+		}
+	</ui:style>
+	
+	<g:HTMLPanel styleName="media {style.thisShit}">
+		<a class="pull-left" ui:field="thumbnailAnchor" >
+			<g:Image ui:field="thumbnail" />
+		</a>
+		<div class="media-body">
+			<h4 class="media-heading" ui:field="title"></h4>
+			<div class="{style.bodyMain}">
+				[<span ui:field="score"></span>:&nbsp;
+				<span class="{style.ups}" ui:field="ups"></span>&nbsp;|&nbsp;
+				<span class="{style.downs}" ui:field="downs"></span>]&nbsp;
+				Submitted by 
+				<a ui:field="authorLink"><span ui:field="author"></span></a>&nbsp;
+				to 
+				<span ui:field="subreddit"></span>&nbsp;
+				<span ui:field="duration"></span>&nbsp;
+				days ago.&nbsp;
+				(<span ui:field="domain"></span>)
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

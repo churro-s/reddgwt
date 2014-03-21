@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- When updating your version of GWT, you should also update this DTD reference, 
+	so that your app can take advantage of the latest GWT module capabilities. -->
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.5.1//EN"
+  "http://google-web-toolkit.googlecode.com/svn/tags/2.5.1/distro-source/core/src/gwt-module.dtd">
+<module rename-to='reddgwt'>
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User' />
+	
+	<!-- Logging stuff  -->
+	<inherits name="com.google.gwt.logging.Logging" />
+	<!-- # To change the default logLevel -->
+	<set-property name="gwt.logging.logLevel" value="SEVERE" />
+	<!-- # To disable logging -->
+	<set-property name="gwt.logging.enabled" value="FALSE" />
+	
+	<set-property name="gwt.logging.firebugHandler" value="DISABLED" />
+	<set-property name="gwt.logging.simpleRemoteHandler" value="ENABLED" />
+	<set-property name="gwt.logging.consoleHandler" value="DISABLED" />
+	<set-property name="gwt.logging.enabled" value="FALSE"/> 
+	<set-property name="gwt.logging.logLevel" value="FINE"/>
+	<set-property name="gwt.logging.consoleHandler" value="DISABLED" />
+	<set-property name="gwt.logging.developmentModeHandler" value="DISABLED" />
+	<set-property name="gwt.logging.popupHandler" value="DISABLED" />
+	<set-property name="gwt.logging.systemHandler" value="DISABLED" />
+
+
+	<!-- Specify the app entry point class. -->
+	<entry-point class='com.sathkumara.churro.client.ReddGWT' />
+
+	<source path='client' />
+	<source path='shared' />
+
+</module>
