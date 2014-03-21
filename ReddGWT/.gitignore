@@ -1,1 +1,4 @@
 /bin
+/gwt-unitCache
+/.gwt
+/.settings
